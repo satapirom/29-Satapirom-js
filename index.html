@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shopping cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="max-w-screen-lg m-auto">
+    <h1 class="text-center">shopping Cart</h1>
+    <h2>Add item for selection</h2>
+    <form id="form" class="flex justify-between">
+        <div>
+            <label for="productName">Product Name: </label>
+            <input type="text" name="productName" id="productName" required class="border-2">
+        </div>
+        <div>
+            <label for="price">Price: </label>
+            <input type="number" name="price" id="price" required class="border-2">
+            <p dir="errorMesagePrice" class="text-red-600 ></p>
+        </div>
+        <div>
+            <label for="imageUrl">Image: </label>
+            <input type="url" name="ImageUrl" id="imageUrl" required class="border-2">
+            <p id="errorMesageImg" class="text-red-600"></p>
+        </div>
+        <button type="submit" id="createProductBtn" class="bg-gray-400 rounded-md px-4 py-2">Create Product</button>
+    </form>
+    <section id="productDashboard" class="shadow-lg"></section>
 
     <script src="script.js"></script>
 </body>
