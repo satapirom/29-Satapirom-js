@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w-screen-lg m-auto">
-    <h1 class="text-center">shopping Cart</h1>
-    <h2>Add item for selection</h2>
+    <h1 class="text-center text-2xl font-bold my-8">Shopping Cart</h1>
+    <h2 class="text-xl font-normal my-4">Add item for selection</h2>
     <form id="form" class="flex justify-between">
         <div>
             <label for="productName">Product Name: </label>
@@ -27,6 +27,9 @@
         <button type="submit" id="createProductBtn" class="bg-gray-400 rounded-md px-4 py-2">Create Product</button>
     </form>
     <section id="productDashboard" class="shadow-lg"></section>
+    <button id="bntAddToCart" class="bg-gray-400 py-2 px-4 rounded-md">Add to Cart</button>
+    <section id="cartDashboard" class="shadow-lg"></section>
+    <button id="calculateBtn"  class="bg-gray-400 py-2 px-4  my-8 rounded-md">Calculate Final Price</button>
 
     <script src="script.js"></script>
 </body>
